@@ -1,0 +1,36 @@
+{
+  "name": "jsx-to-html",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "svite build -ts",
+    "dev": "svite -ts",
+    "format": "prettier --write 'src/**/*' --ignore-unknown",
+    "validate": "svelte-check && tsc --noEmit"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "svelteBracketNewLine": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.2.0",
+    "@tsconfig/svelte": "^1.0.10",
+    "@types/babel__standalone": "^7.1.3",
+    "postcss": "^8.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^2.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.4.0",
+    "svelte": "3.29.0",
+    "svelte-check": "^1.0.53",
+    "svelte-hmr": "0.11.1",
+    "svelte-preprocess": "4.5.1",
+    "svite": "^0.7.2",
+    "tailwindcss": "^1.8.10",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.3"
+  }
+}
