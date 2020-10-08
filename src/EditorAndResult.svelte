@@ -33,7 +33,6 @@
     autocapitalize="off"
     spellcheck="false"
     class={`${className}`}
-    class:bg-red-200={error}
     class:text-red-800={error}
     value={code || error || ''}
   />
