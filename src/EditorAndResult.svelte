@@ -3,11 +3,14 @@
 
   let value = '<div className="my-class" />'
   let code
+  let error
   $: {
     try {
       code = transform(value)
+      error = undefined
     } catch (e) {
-      console.error(e)
+      code = undefined
+      error = e
     }
   }
 
@@ -29,7 +32,9 @@
     autocorrect="off"
     autocapitalize="off"
     spellcheck="false"
-    class={className}
-    value={code}
+    class={`${className}`}
+    class:bg-red-200={error}
+    class:text-red-800={error}
+    value={code || error || ''}
   />
 </div>
