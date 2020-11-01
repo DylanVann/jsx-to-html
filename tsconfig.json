@@ -1,5 +1,9 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "types": ["svelte", "vite/dist/importMeta"]
+  },
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "public/*"]
 }
